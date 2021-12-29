@@ -1,29 +1,18 @@
 {
   "name": "vai-da-o-demonho",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vai da o demonhôoo 🧨🎆",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "scripts": { "start": "node index.js" },
   "repository": {
     "type": "git",
     "url": "https://github.com/iurypiva/vai-da-o-demonho.git"
   },
-  "keywords": [
-    "vai-da-o-demonho"
-  ],
-  "author": {
-    "name": "Iury Dias Piva",
-    "url": "https://github.com/iurypiva"
-  },
+  "keywords": ["vai-da-o-demonho"],
+  "author": { "name": "Iury Dias Piva", "url": "https://github.com/iurypiva" },
   "license": "MIT",
-  "bin": {
-    "vai-da-o-demonho": "./index.js"
-  },
-  "bugs": {
-    "url": "https://github.com/iurypiva/vai-da-o-demonho/issues"
-  },
+  "bin": { "vai-da-o-demonho": "./index.js" },
+  "bugs": { "url": "https://github.com/iurypiva/vai-da-o-demonho/issues" },
   "homepage": "https://github.com/iurypiva/vai-da-o-demonho#readme",
   "type": "module"
 }

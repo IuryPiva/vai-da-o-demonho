@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "module": "ES2020",
     "target": "es2020",
     "jsx": "preserve",

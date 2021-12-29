@@ -17,7 +17,9 @@ export default function play() {
       break;
     case "win32":
       exec(
-        `${path.join(currentDir, "./forWindows.vbs").slice(1)} ${audioPath.slice(1)}.mp3`,
+        `${path.join(currentDir, "./forWindows.vbs").slice(1)} ${
+          audioPath.slice(1)
+        }.mp3`,
         callback,
       );
       break;
@@ -44,11 +46,15 @@ function isMain(meta) {
 
   const scriptPath = process.argv[1];
   const extension = path.extname(scriptPath);
+
   if (extension) {
     return modulePath === scriptPath;
   }
 
-  return stripExt(modulePath) === scriptPath;
+  return stripExt(modulePath) === scriptPath ||
+    scriptPath.endsWith("vai-da-o-demonho");
 }
 
-if (isMain(import.meta)) play();
+if (isMain(import.meta)) {
+  play();
+}
