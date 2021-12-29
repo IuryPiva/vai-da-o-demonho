@@ -8,7 +8,7 @@ import process from "process";
 const currentDir = path.parse(import.meta.url.replace("file://", "")).dir;
 const audioPath = path.join(currentDir, "./vai-da-o-demonho");
 
-const callback = error => error && console.log(error);
+const callback = (error) => error && console.log(error);
 
 export default function play() {
   switch (process.platform) {
@@ -17,7 +17,7 @@ export default function play() {
       break;
     case "win32":
       exec(
-        `${path.join(currentDir, "./forWindows.vbs")} ${audioPath}.mp3`,
+        `${path.join(currentDir, "./forWindows.vbs").slice(1)} ${audioPath.slice(1)}.mp3`,
         callback,
       );
       break;
